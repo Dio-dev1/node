@@ -8,4 +8,4 @@ var UserIndex = new Schema({
   collection: 'userIndexs'
 });
 
-module.exports = mongoose.model('Model', UserIndex);
+module.exports = mongoose.model('UserIndex', UserIndex);
