@@ -13,8 +13,12 @@ route.post('/upload', async (req, res) => {
 })
 
 route.get('/test', async (req, res) => {
-    console.log("this is test");
-    res.json("api success");
+    let user = {};
+    user.userId = "testId";
+    user.image = "this is test image";
+    let userModel = new UserIndex(user);
+    await userModel.save();
+    res.json(userModel);
 })
 
 module.exports = route;
