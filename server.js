@@ -28,6 +28,6 @@ app.use('/', (req, res) => {
 })
 
 // port to run
-const Port = process.env.port || 4000;
+const port = process.env.port || 4000;
 
-app.listen(Port, () => console.log("Server started"))
+app.listen(port, () => console.log("Server started"))
