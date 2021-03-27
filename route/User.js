@@ -12,9 +12,4 @@ route.post('/upload', async (req, res) => {
     res.json(userModel);
 })
 
-route.get('/test', async (req, res) => {
-    
-    res.json("api success test");
-})
-
 module.exports = route;
